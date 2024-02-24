@@ -1,5 +1,6 @@
 ---
 layout: post
+cover: /media/zach-reiner-jekyll-island-3.jpg
 title: "Some articles are just so long they deserve a really long title to see if things will break well"
 categories: misc
 ---

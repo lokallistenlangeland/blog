@@ -1,5 +1,6 @@
 ---
 layout: post
+cover: /media/zach-reiner-jekyll-island-2.jpg
 title: "This post demonstrates post content styles"
 categories: junk
 author:
@@ -9,6 +10,10 @@ meta: "Springfield"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
+
+## Some image
+
+![Jekyll island](/media/zach-reiner-jekyll-island-1.jpg)
 
 ## Some great heading (h2)
 

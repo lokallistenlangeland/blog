@@ -11,3 +11,8 @@ header_pages:
   - kontakt.md
 minima:
   skin: classic
+collections:
+  pages:
+    collections_dir: _pages
+    output: true
+    permalink: /:path

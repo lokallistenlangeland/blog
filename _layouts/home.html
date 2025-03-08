@@ -6,8 +6,10 @@ layout: base
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
+{% assign frontpagePost = site.posts | where:"title", "frontpage" %}
 
-  {{ content }}
+{{ frontpagePost.content }}
+
 
 
   {% if site.paginate %}

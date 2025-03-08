@@ -41,6 +41,8 @@ layout: base
             {{ post.title | escape }}
           </a>
         </h3>
+        <img src="{{ post.cover | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
+
           <div class="post-content e-content" itemprop="articleBody">
     {{ post.content }}
   </div>

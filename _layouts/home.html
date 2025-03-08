@@ -6,10 +6,13 @@ layout: base
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-{% assign frontpagePost = site.pages | where:"title", "frontpage" %}
-
-{{ frontpagePost.content }}
-
+   {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths =  default_paths -%}  {%- for path in page_paths -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title  and my_page.title == "frontpage" -%}
+            {{myPage.content}}
+            {%- endif -%}
+          {%- endfor -%}
 
 
   {% if site.paginate %}

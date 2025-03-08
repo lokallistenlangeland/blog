@@ -40,7 +40,6 @@ content:
       - { name: description, label: Description, type: string }
       - { name: theme, label: Theme, type: string }
       - { name: plugins, label: Plugins, type: string, list: true }
-      - { name: header_pages, label: Header pages, type: string, list: true }
       - name: minima
         label: Minima settings
         description: Minima specific settings, which are only available from Minima 3.0 onward.

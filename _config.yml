@@ -11,3 +11,8 @@ header_pages:
   - ./_pages/2025-03-08-kontakt.md
 minima:
   skin: classic
+collections:
+  pages:
+    collections_dir: _pages
+    output: true
+    permalink: /:path

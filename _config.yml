@@ -8,6 +8,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 header_pages:
-  - _pages/2025-03-08-kontakt.md
+  - ./_pages/2025-03-08-kontakt.md
 minima:
   skin: classic

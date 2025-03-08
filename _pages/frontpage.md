@@ -1,5 +1,5 @@
 ---
 layout: post
 title: frontpage
-exclude: true
 ---
+juhuhu her er en frontpage

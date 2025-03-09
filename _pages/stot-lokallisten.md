@@ -1,4 +1,7 @@
 ---
 layout: post
-title: Støt Lokallisten
+title: Aktiviteter
 ---
+# Kalender
+
+\[Indlejre kalender her\]

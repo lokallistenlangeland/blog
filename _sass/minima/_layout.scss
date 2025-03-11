@@ -12,13 +12,16 @@
 }
 
 .site-logo {
-  height:120em;
+  height: 7em;
 }
 
 .site-nav {
-  position: absolute;
-  bottom: 9px;
-  right: $spacing-unit * .5;
+  // position: absolute;
+  // top: 9px;
+  // right: $spacing-unit * .5;
+  position: static;
+  padding-top: 4em;
+  float: right;
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
@@ -75,6 +78,7 @@
 
   @media screen and (min-width: $on-medium) {
     position: static;
+    padding-top: 4em;
     float: right;
     border: none;
     background-color: inherit;

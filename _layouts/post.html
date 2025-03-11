@@ -25,8 +25,13 @@ layout: base
         {% endfor %}
       {%- endif -%}</p>
   </header>
+          {%- if page.cover -%}
+            <img src="{{ page.cover | prepend: site.baseurl }}">
 
+      {%- endif -%}</p>
   <div class="post-content e-content" itemprop="articleBody">
+
+
     {{ content }}
   </div>
 

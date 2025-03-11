@@ -41,7 +41,10 @@ layout: base
             {{ post.title | escape }}
           </a>
         </h3>
-        <img src="{{ post.cover | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
+                  {%- if post.cover -%}
+            <img src="{{ post.cover | prepend: site.baseurl }}">
+
+      {%- endif -%}</p>
 
           <div class="post-content e-content" itemprop="articleBody">
     {{ post.content }}

@@ -5,3 +5,64 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+body {
+  background-image: url("/assets/himmel.jpg");
+  background-size: cover;
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+}
+.site-nav {
+  padding-top:0;
+  margin-top: auto;
+  max-width:500px;
+  margin-left:auto;
+}
+.site-header-container {
+  margin-top:1em;
+  display: grid;
+  grid-template-columns: 120px 400px auto;
+
+}
+
+.frontpage-cover-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom:2em;
+  .titles {
+    background-color: #7E8FA6ff;
+    color: white;
+    text-align: left;
+    padding-left:10%;
+    padding-top:10%;
+    h1 {
+      font-weight:800;
+      margin:0;
+      font-size: 4em;
+    }
+    h2 {
+      font-weight: 500;
+      margin:0;
+      font-size: 2em;
+    }
+  }
+}
+
+
+  .site-logo {
+    width:120px;
+    height:auto;
+    margin-top:auto;
+    img {
+      vertical-align: auto;
+    }
+
+
+  }
+  .site-logo-text {
+padding-bottom: 5px;
+    margin-top: auto;
+    margin-left:-20px;
+
+
+  }

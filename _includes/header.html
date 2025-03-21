@@ -1,11 +1,14 @@
 <header class="site-header">
 
   <div class="wrapper">
+
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths =  default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a  rel="author" href="{{ "/" | relative_url }}"><img class="site-logo" src="/media/logo.jpg"/> </a>
+    <div class="site-header-container">
+    <a class="site-logo" rel="author" href="{{ "/" | relative_url }}"><img src="/assets/logo.png"/></a>
 
+    <a class="site-logo-text" rel="author" href="{{ "/" | relative_url }}"><img  src="/assets/tekst.svg"/> </a>
     {%- if titles_size > 0 -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -22,12 +25,13 @@
 
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title  and my_page.title != "frontpage" -%}
+            {%- if my_page.title  and my_page.layout != "frontpage" -%}
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
         </div>
       </nav>
+    </div>
     {%- endif -%}
   </div>
 </header>

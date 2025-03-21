@@ -1,7 +1,7 @@
 ---
-layout: post
-title: frontpage
+layout: frontpage
+title: velkommen til vores
+subtitle: Hjemmeside
 ---
 Velkommen til hjemmesiden for Lokallisten Langeland. Vi er i gang med at bygge hjemmesiden op så vær væbnet med lidt tålmodighed indtil videre.
 
-![](/media/mark.jpg)

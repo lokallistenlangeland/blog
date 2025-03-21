@@ -25,6 +25,8 @@
   border: 1px solid $border-color-01;
   border-radius: 5px;
   text-align: right;
+  margin-bottom:10px;
+
 
   .nav-trigger {
     display: none;
@@ -75,7 +77,9 @@
     margin-left: 20px;
   }
 
-  @media screen and (min-width: $on-medium) {
+  @media screen and (min-width: 1000px) {
+    margin-bottom:0;
+
     position: static;
     padding-top: 4em;
     float: right;
@@ -191,7 +195,7 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit 1em 0 1em;
   flex: 1 0 auto;
 }
 

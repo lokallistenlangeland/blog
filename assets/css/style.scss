@@ -19,9 +19,14 @@ body {
   margin-left:auto;
 }
 .site-header-container {
-  margin-top:1em;
+  height:76px;
   display: grid;
-  grid-template-columns: 120px 400px auto;
+  grid-template-columns: 80% auto;
+
+  @media screen and (min-width: $on-large) {
+    grid-template-columns: 520px auto;
+
+  }
 
 }
 
@@ -67,9 +72,8 @@ body {
   }
 }
 
-
   .site-logo {
-    width:120px;
+    max-width:520px;
     height:auto;
     margin-top:auto;
     img {
@@ -85,3 +89,4 @@ padding-bottom: 5px;
 
 
   }
+

@@ -19,7 +19,7 @@ body {
   margin-left:auto;
 }
 .site-header-container {
-  height:76px;
+  height:9em;
   display: grid;
   grid-template-columns: 80% auto;
 
@@ -84,17 +84,13 @@ body {
     max-width:520px;
     height:auto;
     margin-top:auto;
+    margin-left:-3em;
     img {
       vertical-align: auto;
     }
 
 
   }
-  .site-logo-text {
-padding-bottom: 5px;
-    margin-top: auto;
-    margin-left:-20px;
-
-
-  }
+  
+  
 

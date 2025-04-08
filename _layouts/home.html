@@ -12,8 +12,8 @@ layout: base
     <h2 class="firstline">{{ page.title }}</h2>
     <h1 class="secondline">{{ page.subtitle }}</h1>
   </div>
-    {%- if post.cover -%}
-    <img src="{{ post.cover | prepend: site.baseurl }}">
+    {%- if page.cover -%}
+    <img src="{{ page.cover | prepend: site.baseurl }}">
     {%- else -%}
     <img src="{{ " /assets/skovsgaard.png" | prepend: site.baseurl }}">
 

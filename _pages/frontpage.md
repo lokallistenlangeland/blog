@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: frontpage
 title: Velkommen til vores
 subtitle: Hjemmeside
 ---

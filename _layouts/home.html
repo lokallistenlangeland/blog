@@ -10,15 +10,14 @@ layout: base
     {%- if page.layout == "frontpage" -%}
     <div class="titles">
       {%- if page.title_multiline -%}
-    <div>{{ page.title_multiline }}</div>
+    <div class="post-content e-content">{{ page.title_multiline }}
+      
+    </div>
 
       {%- else -%}
       <div>{{ page.title }}</div>
       {%- endif -%}
 
-
-    <h2 class="firstline">{{ page.title }}</h2>
-    <h1 class="secondline">{{ page.subtitle }}</h1>
   </div>
     {%- if page.cover -%}
     <img src="{{ page.cover | prepend: site.baseurl }}">
@@ -28,7 +27,7 @@ layout: base
 
     {%- endif -%}
   </div>
-  {{page.content}}
+  {{page.title}}
   {%- endif -%}
   {%- endfor -%}
   <br>

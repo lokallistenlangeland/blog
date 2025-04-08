@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: frontpage
 cover: /assets/skovsgaard.png
 title: Velkommen til vores
 title_multiline: |-

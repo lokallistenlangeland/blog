@@ -16,5 +16,30 @@
     {%- include footer.html -%}
 
   </body>
+  <script>
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+    });
+    let showDraft = params.showdraft !=null;
+    if (showDraft) {
+    }else{
+  
+  
+      const nyheder = document.getElementsByClassName("nyhed")
 
-</html>
+      for (var i = 0; i < nyheder.length; i++) {
+        const elm = nyheder[i];
+        const draft =  elm.getAttribute("x-draft") == "true"
+        if (draft){
+          elm.style.display = "none"
+        }
+
+      
+  
+  
+      }
+    }
+  
+  </script>
+  
+  </html>

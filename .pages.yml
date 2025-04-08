@@ -8,6 +8,7 @@ content:
       fields: [ title, date  ]
     fields:
       - { name: layout, type: string, hidden: true, default: nyhed }
+      - { name: draft, label: Draft, type: boolean, default: true }
       - { name: cover, label: Cover image, type: image }
       - { name: date, label: Date, type: date, required: true, options: { format: yyyy-MM-dd } }
       - { name: title, label: Title, type: string, required: true }
@@ -21,6 +22,7 @@ content:
       fields: [ title, begin_date, begin_hour, begin_minute, end_date, end_hour, end_minute  ]
     fields:
       - { name: layout, type: string, hidden: true, default: aktivitet }
+      - { name: draft, label: Draft, type: boolean, default: true }
       - { name: cover, label: Cover image, type: image }
       - { name: begin_date, label: Start date, type: date, required: true, options: { format: yyyy-MM-dd } }
       - { name: begin_hour, label: Begin hour, type: number, required: false, options: {min: 0, max:23} }

@@ -7,10 +7,9 @@
   "minima/initialize";
 
 body {
-  background-image: url("/assets/himmel.jpg");
-  background-size: cover;
-  background-position: 0 -100px;
+  background-image: url("/media/Himmel_2.jpg");
   background-repeat: no-repeat;
+  background-size: 100vw auto;
 }
 .site-nav {
   padding-top:0;
@@ -19,6 +18,7 @@ body {
   margin-left:auto;
 }
 .site-header-container {
+  margin-top:2em;
   height:9em;
   display: grid;
   grid-template-columns: 80% auto;
@@ -81,11 +81,12 @@ body {
 }
 
   .site-logo {
-    max-width:520px;
     height:auto;
     margin-top:auto;
     margin-left:-3em;
     img {
+      max-width:620px;
+
       vertical-align: auto;
     }
 

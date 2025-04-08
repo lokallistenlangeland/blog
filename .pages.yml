@@ -42,5 +42,5 @@ content:
       - { name: layout, type: string, hidden: true, default: post }
       - { name: cover, label: Cover image, type: image }
       - { name: title, label: Title, type: string, required: true }
-      - { name: subtitle, label: Subtitle, type: string, required: false }
+      - { name: title_multiline, label: Title Multiline, type: rich-text, required: false}
       - { name: body, label: Body, type: rich-text }

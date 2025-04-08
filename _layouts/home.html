@@ -9,6 +9,14 @@ layout: base
     {%- for page in site.pages -%}
     {%- if page.layout == "frontpage" -%}
     <div class="titles">
+      {%- if page.title_multiline -%}
+    <div>{{ page.title_multiline }}</div>
+
+      {%- else -%}
+      <div>{{ page.title }}</div>
+      {%- endif -%}
+
+
     <h2 class="firstline">{{ page.title }}</h2>
     <h1 class="secondline">{{ page.subtitle }}</h1>
   </div>

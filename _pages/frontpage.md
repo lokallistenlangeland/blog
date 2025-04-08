@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: frontpage
+title: Velkommen til vores
 cover: /assets/skovsgaard.png
 title: Velkommen til vores
 subtitle: Hjemme-side

@@ -204,6 +204,7 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
+  margin-bottom:3em;
   padding-right: 5px;
   padding-left: 5px;
   @extend %clearfix;

@@ -28,19 +28,17 @@ layout: base
   <h1 class="page-heading" id="nyheder">Nyheder</h1>
 
   {% if site.paginate %}
-  {% assign posts = paginator.posts %}
+  {% assign nyheder = paginator.nyheder %}
   {% else %}
-  {% assign posts = site.posts %}
+  {% assign nyheder = site.nyheder %}
   {% endif %}
 
 
-  {%- if posts.size > 0 -%}
-  {%- if page.list_title -%}
-  <h2 class="post-list-heading">{{ page.list_title }}</h2>
-  {%- endif -%}
+  {%- if nyheder.size > 0 -%}
+
   <ul class="post-list">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    {%- for post in posts -%}
+    {%- for post in nyheder -%}
     <li>
       <span class="post-meta">{{ post.date | date: date_format }} af {% for author in post.author %}
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">

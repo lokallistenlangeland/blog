@@ -16,3 +16,11 @@ collections:
     collections_dir: _pages
     output: true
     permalink: /:path
+  nyheder:
+    collections_dir: _nyheder
+    output: true
+    permalink: /:path
+  aktiviteter:
+    collections_dir: _aktiviteter
+    output: true
+    permalink: /:path

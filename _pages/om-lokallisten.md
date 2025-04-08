@@ -1,4 +1,4 @@
 ---
 layout: post
-title: Om os
+title: OM OS
 ---

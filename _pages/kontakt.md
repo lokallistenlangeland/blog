@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kontakt
+title: KONTAKT
 ---
 Når du kontakter os per mail kan du forvente at det bliver læst men ikke nødvendigvis besvaret.
 

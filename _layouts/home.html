@@ -48,16 +48,15 @@ layout: base
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     {%- for post in nyheder -%}
     <li class="nyhed" x-draft="{{ post.draft }}">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
       <span class="post-meta" ">{{ post.date | date: date_format }} af {% for author in post.author %}
         <span itemprop=" author" itemscope itemtype="http://schema.org/Person">
         <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
       {%- if forloop.last == false %}, {% endif -%}
       {% endfor %}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
+      
       {%- if post.cover -%}
       <img src="{{ post.cover | prepend: site.baseurl }}">
 

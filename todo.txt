@@ -1,0 +1,13 @@
+
+
+* respect typography in posts
+* headings on frontpage
+* frontpage is seperat layout
+* menu button margin adjust
+* nyheder: cover (list format) halv bredde, under dato og heading, over body
+* nyheder: cover (single post) hel bredde, over post title etc
+* title links are not colored
+* links i body skal være farvet og bold med underline med hover
+* kalender overskrift pr måned og per dato (med event, ingen listning for datoer uden events)
+* frontpage body skal have margin under og over
+

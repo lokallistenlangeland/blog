@@ -1,7 +1,7 @@
 ---
 layout: frontpage
 cover: /assets/skovsgaard.png
-title: Velkommen til vores
+title: Velkommen til vores hjemmeside
 title_multiline: |-
   Velkommen til vores
 
@@ -9,4 +9,5 @@ title_multiline: |-
 
   # SIDE
 ---
-Velkommen til hjemmesiden for Lokallisten Langeland. Vi er i gang med at bygge hjemmesiden op så vær væbnet med lidt tålmodighed indtil videre.
+Velkommen til hjemmesiden
+for **Lokallisten Langeland**. Vi er i gang med at bygge hjemmesiden op så vær væbnet med lidt tålmodighed indtil videre.

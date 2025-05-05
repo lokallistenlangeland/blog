@@ -10,24 +10,26 @@ layout: base
     {%- if page.layout == "frontpage" -%}
     <div class="titles">
       {%- if page.title_multiline -%}
-    <div class="post-content e-content">{{ page.title_multiline }}
-      
-    </div>
+      {{ page.title_multiline | markdownify }}
+
 
       {%- else -%}
-      <div>{{ page.title }}</div>
+      {{ page.title }}
       {%- endif -%}
 
-  </div>
-    {%- if page.cover -%}
-    <img src="{{ page.cover | prepend: site.baseurl }}">
-    {%- else -%}
-    <img src="{{ "/assets/skovsgaard.png" | prepend: site.baseurl }}">
+    </div>
+    <div class="frontpage-cover">
 
+      {%- if page.cover -%}
+      <img src="{{ page.cover | prepend: site.baseurl }}">
+      {%- else -%}
+      <img src="{{ " /assets/skovsgaard.png" | prepend: site.baseurl }}">
 
-    {%- endif -%}
+      {%- endif -%}
+    </div>
   </div>
   {{page.title}}
+  {{page.content}}
   {%- endif -%}
   {%- endfor -%}
   <br>
@@ -48,10 +50,10 @@ layout: base
     {%- for post in nyheder -%}
     <li class="nyhed" x-draft="{{ post.draft }}">
       <span class="post-meta" ">{{ post.date | date: date_format }} af {% for author in post.author %}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-        {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}</span>
+        <span itemprop=" author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+      {%- if forloop.last == false %}, {% endif -%}
+      {% endfor %}</span>
       <h3>
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}

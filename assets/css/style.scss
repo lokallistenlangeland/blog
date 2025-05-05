@@ -6,91 +6,89 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
-body {
-  background-image: url("/media/Himmel_2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vw auto;
-}
-.site-nav {
-  padding-top:0;
-  margin-top: auto;
-  max-width:500px;
-  margin-left:auto;
-}
-.site-header-container {
-  margin-top:2em;
-  height:9em;
-  display: grid;
-  grid-template-columns: 80% auto;
-
-  @media screen and (min-width: $on-large) {
-    grid-template-columns: 500px auto;
-
+  body {
+    background-image: linear-gradient(
+      to bottom, transparent, $background-color 11em
+    ),url("/media/Himmel_2.jpg");
+    background-repeat: no-repeat;
+    background-size: max(100vw, 800px) auto;
   }
+  
 
-}
-
-.frontpage-cover-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-bottom:2em;
-  .titles {
+  
+  .site-header-container {
+    margin-top: 2em;
+    max-height: 9em;
+    display: grid;
+    grid-template-columns: 80% auto;
+  
+    @media screen and (min-width: $on-large) {
+      grid-template-columns: 500px auto;
+  
+    }
+  
+  }
+  
+  .frontpage-cover-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2em;
     background-color: #7E8FA6ff;
     color: white;
-    text-align: left;
-    padding-left:10%;
-    padding-top:10%;
-    h1 {
-      font-weight:800;
-      margin:0;
-      padding:0;
-      
-      @include relative-font-size(1.1);
-      @media screen and (min-width: $on-small) and (max-width: $on-medium) {
-        @include relative-font-size(1.2);
-
+  
+    .titles {
+      flex: 1 1 0;
+      width: 0;
+      padding:0.5em;  
+      p {
+        margin-bottom: 0px;
+        line-height:1em;
+        font-size: 2em;
+        @media screen and (max-width: $on-medium) {
+          font-size: 1.3em;
+        }
       }
-      @media screen and (min-width: $on-large) {
-        @include relative-font-size(3.5);
-
-      }
-      @media screen and (min-width: $on-medium) and (max-width: $on-large) {
-        @include relative-font-size(2.2);
+  
+      h1 {
+        margin-bottom: 0px;
+        font-weight: 600;
+        font-size: 3em;
+        line-height: 1em;
+        @media screen and (max-width: $on-medium) {
+          font-size: 1.8em;
+        }
 
       }
     }
-    h2 {
-      font-weight: 500;
-      padding:0;
-      margin:0;
-      @include relative-font-size(0.8);
-      @media screen and (min-width: $on-large) {
-        @include relative-font-size(2.5);
-
+  
+    .frontpage-cover {
+      flex: 1 1 0;
+      width: 0;
+  
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
       }
-      @media screen and (min-width: $on-small) and (max-width: $on-medium) {
-        @include relative-font-size(1);
-
-      }
-      @media screen and (min-width: $on-medium) and (max-width: $on-large) {
-        @include relative-font-size(1.8);
-
-      }
+  
     }
   }
-}
-
+  
   .site-logo {
-    height:auto;
-    margin-top:auto;
-    margin-left:-3em;
+    height: auto;
+    margin-top: auto;
+
+  
     img {
-      max-width:620px;
+      max-width: 620px;
+      width:100%;
 
       vertical-align: auto;
+      @media screen and (min-width: $on-large) {
+        margin-left: -3em;      }
     }
-
-
+  
+  
   }
   
   

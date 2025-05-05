@@ -9,5 +9,5 @@ title_multiline: |-
 
   # SIDE
 ---
-Velkommen til hjemmesiden
-for **Lokallisten Langeland**. Vi er i gang med at bygge hjemmesiden op så vær væbnet med lidt tålmodighed indtil videre.
+
+**Lokallisten Langeland** er en ny borgerbevægelse i det langelandske folkestyre, som stiller op til kommunalvalget i november 2025 – og vil gøre en forskel.
